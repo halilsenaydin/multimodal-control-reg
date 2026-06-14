@@ -1,0 +1,661 @@
+Device: cuda
+Train pairs: 308 | Val pairs: 55
+Loading 308 file pairs with 2 workers...
+  50/308 files loaded
+  100/308 files loaded
+  150/308 files loaded
+  200/308 files loaded
+  250/308 files loaded
+  300/308 files loaded
+  308/308 files loaded
+  Scaler fitted on 34889 rows
+  Total sequences: 16413
+Loading 55 file pairs with 2 workers...
+  50/55 files loaded
+  55/55 files loaded
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  Total sequences: 2938
+ego_dim: 21
+Training
+
+Epoch 000
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.1519
+  step 204/1026 | loss 0.1302
+  step 306/1026 | loss 0.1106
+  step 408/1026 | loss 0.0968
+  step 510/1026 | loss 0.0870
+  step 612/1026 | loss 0.0796
+  step 714/1026 | loss 0.0729
+  step 816/1026 | loss 0.0674
+  step 918/1026 | loss 0.0630
+  step 1020/1026 | loss 0.0590
+Epoch 000 | train 0.058756 | train_eval 0.016257 | val 0.020235 | gap +24.5% | lr 2.99e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9346   0.0671   0.1239
+      throttle   0.6141   0.0691   0.1190
+         steer   0.7407   0.0601   0.0853
+       overall   0.7631
+  ✓ checkpoint saved
+
+Epoch 001
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0202
+  step 204/1026 | loss 0.0197
+  step 306/1026 | loss 0.0194
+  step 408/1026 | loss 0.0185
+  step 510/1026 | loss 0.0179
+  step 612/1026 | loss 0.0171
+  step 714/1026 | loss 0.0171
+  step 816/1026 | loss 0.0166
+  step 918/1026 | loss 0.0162
+  step 1020/1026 | loss 0.0159
+Epoch 001 | train 0.015851 | train_eval 0.008998 | val 0.011654 | gap +29.5% | lr 2.97e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9632   0.0359   0.0929
+      throttle   0.7771   0.0468   0.0904
+         steer   0.8563   0.0437   0.0635
+       overall   0.8655
+  ✓ checkpoint saved
+
+Epoch 002
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0111
+  step 204/1026 | loss 0.0118
+  step 306/1026 | loss 0.0111
+  step 408/1026 | loss 0.0113
+  step 510/1026 | loss 0.0115
+  step 612/1026 | loss 0.0114
+  step 714/1026 | loss 0.0113
+  step 816/1026 | loss 0.0110
+  step 918/1026 | loss 0.0112
+  step 1020/1026 | loss 0.0110
+Epoch 002 | train 0.010988 | train_eval 0.006768 | val 0.010085 | gap +49.0% | lr 2.93e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9691   0.0272   0.0852
+      throttle   0.8036   0.0361   0.0849
+         steer   0.8713   0.0418   0.0601
+       overall   0.8813
+  ✓ checkpoint saved
+
+Epoch 003
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0069
+  step 204/1026 | loss 0.0080
+  step 306/1026 | loss 0.0082
+  step 408/1026 | loss 0.0086
+  step 510/1026 | loss 0.0085
+  step 612/1026 | loss 0.0089
+  step 714/1026 | loss 0.0088
+  step 816/1026 | loss 0.0087
+  step 918/1026 | loss 0.0088
+  step 1020/1026 | loss 0.0088
+Epoch 003 | train 0.008868 | train_eval 0.005684 | val 0.010366 | gap +82.4% | lr 2.87e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9694   0.0245   0.0847
+      throttle   0.8119   0.0362   0.0831
+         steer   0.8681   0.0390   0.0608
+       overall   0.8831
+
+Epoch 004
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0074
+  step 204/1026 | loss 0.0075
+  step 306/1026 | loss 0.0080
+  step 408/1026 | loss 0.0080
+  step 510/1026 | loss 0.0079
+  step 612/1026 | loss 0.0084
+  step 714/1026 | loss 0.0082
+  step 816/1026 | loss 0.0083
+  step 918/1026 | loss 0.0082
+  step 1020/1026 | loss 0.0080
+Epoch 004 | train 0.008029 | train_eval 0.005125 | val 0.010155 | gap +98.1% | lr 2.80e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9713   0.0233   0.0820
+      throttle   0.8244   0.0333   0.0803
+         steer   0.8584   0.0404   0.0630
+       overall   0.8847
+
+Epoch 005
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0066
+  step 204/1026 | loss 0.0069
+  step 306/1026 | loss 0.0068
+  step 408/1026 | loss 0.0070
+  step 510/1026 | loss 0.0072
+  step 612/1026 | loss 0.0071
+  step 714/1026 | loss 0.0072
+  step 816/1026 | loss 0.0070
+  step 918/1026 | loss 0.0070
+  step 1020/1026 | loss 0.0071
+Epoch 005 | train 0.007096 | train_eval 0.004587 | val 0.009971 | gap +117.3% | lr 2.71e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9690   0.0216   0.0853
+      throttle   0.8302   0.0300   0.0789
+         steer   0.8792   0.0366   0.0582
+       overall   0.8928
+  ✓ checkpoint saved
+
+Epoch 006
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0062
+  step 204/1026 | loss 0.0062
+  step 306/1026 | loss 0.0060
+  step 408/1026 | loss 0.0058
+  step 510/1026 | loss 0.0060
+  step 612/1026 | loss 0.0063
+  step 714/1026 | loss 0.0062
+  step 816/1026 | loss 0.0062
+  step 918/1026 | loss 0.0062
+  step 1020/1026 | loss 0.0063
+Epoch 006 | train 0.006247 | train_eval 0.004093 | val 0.009288 | gap +126.9% | lr 2.61e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9726   0.0209   0.0803
+      throttle   0.8316   0.0324   0.0786
+         steer   0.8839   0.0364   0.0571
+       overall   0.8960
+  ✓ checkpoint saved
+
+Epoch 007
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0041
+  step 204/1026 | loss 0.0059
+  step 306/1026 | loss 0.0060
+  step 408/1026 | loss 0.0060
+  step 510/1026 | loss 0.0062
+  step 612/1026 | loss 0.0062
+  step 714/1026 | loss 0.0060
+  step 816/1026 | loss 0.0059
+  step 918/1026 | loss 0.0059
+  step 1020/1026 | loss 0.0058
+Epoch 007 | train 0.005808 | train_eval 0.003814 | val 0.010014 | gap +162.6% | lr 2.50e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9718   0.0210   0.0813
+      throttle   0.8355   0.0304   0.0777
+         steer   0.8691   0.0373   0.0606
+       overall   0.8921
+
+Epoch 008
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0055
+  step 204/1026 | loss 0.0048
+  step 306/1026 | loss 0.0048
+  step 408/1026 | loss 0.0055
+  step 510/1026 | loss 0.0054
+  step 612/1026 | loss 0.0056
+  step 714/1026 | loss 0.0054
+  step 816/1026 | loss 0.0054
+  step 918/1026 | loss 0.0053
+  step 1020/1026 | loss 0.0053
+Epoch 008 | train 0.005331 | train_eval 0.003444 | val 0.009884 | gap +187.0% | lr 2.38e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9719   0.0203   0.0813
+      throttle   0.8286   0.0294   0.0793
+         steer   0.8774   0.0361   0.0587
+       overall   0.8926
+
+Epoch 009
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0060
+  step 204/1026 | loss 0.0055
+  step 306/1026 | loss 0.0062
+  step 408/1026 | loss 0.0055
+  step 510/1026 | loss 0.0052
+  step 612/1026 | loss 0.0051
+  step 714/1026 | loss 0.0050
+  step 816/1026 | loss 0.0050
+  step 918/1026 | loss 0.0050
+  step 1020/1026 | loss 0.0049
+Epoch 009 | train 0.004902 | train_eval 0.003368 | val 0.009339 | gap +177.3% | lr 2.25e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9711   0.0201   0.0823
+      throttle   0.8313   0.0297   0.0787
+         steer   0.8926   0.0344   0.0549
+       overall   0.8984
+
+Epoch 010
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0053
+  step 204/1026 | loss 0.0045
+  step 306/1026 | loss 0.0046
+  step 408/1026 | loss 0.0044
+  step 510/1026 | loss 0.0046
+  step 612/1026 | loss 0.0046
+  step 714/1026 | loss 0.0047
+  step 816/1026 | loss 0.0047
+  step 918/1026 | loss 0.0047
+  step 1020/1026 | loss 0.0047
+Epoch 010 | train 0.004737 | train_eval 0.002757 | val 0.009616 | gap +248.8% | lr 2.11e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9707   0.0208   0.0829
+      throttle   0.8322   0.0282   0.0785
+         steer   0.8879   0.0346   0.0561
+       overall   0.8969
+
+Epoch 011
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0036
+  step 204/1026 | loss 0.0047
+  step 306/1026 | loss 0.0047
+  step 408/1026 | loss 0.0046
+  step 510/1026 | loss 0.0044
+  step 612/1026 | loss 0.0044
+  step 714/1026 | loss 0.0044
+  step 816/1026 | loss 0.0042
+  step 918/1026 | loss 0.0042
+  step 1020/1026 | loss 0.0043
+Epoch 011 | train 0.004272 | train_eval 0.002656 | val 0.009407 | gap +254.2% | lr 1.96e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9718   0.0207   0.0814
+      throttle   0.8444   0.0271   0.0756
+         steer   0.8836   0.0354   0.0572
+       overall   0.8999
+
+Epoch 012
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0032
+  step 204/1026 | loss 0.0045
+  step 306/1026 | loss 0.0039
+  step 408/1026 | loss 0.0039
+  step 510/1026 | loss 0.0041
+  step 612/1026 | loss 0.0039
+  step 714/1026 | loss 0.0041
+  step 816/1026 | loss 0.0041
+  step 918/1026 | loss 0.0040
+  step 1020/1026 | loss 0.0040
+Epoch 012 | train 0.003974 | train_eval 0.002581 | val 0.009243 | gap +258.1% | lr 1.81e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9727   0.0196   0.0801
+      throttle   0.8433   0.0265   0.0758
+         steer   0.8889   0.0331   0.0559
+       overall   0.9016
+  ✓ checkpoint saved
+
+Epoch 013
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0039
+  step 204/1026 | loss 0.0037
+  step 306/1026 | loss 0.0035
+  step 408/1026 | loss 0.0037
+  step 510/1026 | loss 0.0035
+  step 612/1026 | loss 0.0034
+  step 714/1026 | loss 0.0036
+  step 816/1026 | loss 0.0037
+  step 918/1026 | loss 0.0036
+  step 1020/1026 | loss 0.0037
+Epoch 013 | train 0.003720 | train_eval 0.002713 | val 0.009180 | gap +238.3% | lr 1.66e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9715   0.0199   0.0817
+      throttle   0.8544   0.0265   0.0731
+         steer   0.8883   0.0336   0.0560
+       overall   0.9047
+  ✓ checkpoint saved
+
+Epoch 014
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0046
+  step 204/1026 | loss 0.0040
+  step 306/1026 | loss 0.0040
+  step 408/1026 | loss 0.0040
+  step 510/1026 | loss 0.0037
+  step 612/1026 | loss 0.0037
+  step 714/1026 | loss 0.0036
+  step 816/1026 | loss 0.0035
+  step 918/1026 | loss 0.0035
+  step 1020/1026 | loss 0.0035
+Epoch 014 | train 0.003561 | train_eval 0.002315 | val 0.009229 | gap +298.6% | lr 1.50e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9725   0.0197   0.0803
+      throttle   0.8451   0.0263   0.0754
+         steer   0.8875   0.0335   0.0562
+       overall   0.9017
+
+Epoch 015
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0026
+  step 204/1026 | loss 0.0028
+  step 306/1026 | loss 0.0029
+  step 408/1026 | loss 0.0032
+  step 510/1026 | loss 0.0031
+  step 612/1026 | loss 0.0032
+  step 714/1026 | loss 0.0033
+  step 816/1026 | loss 0.0032
+  step 918/1026 | loss 0.0033
+  step 1020/1026 | loss 0.0035
+Epoch 015 | train 0.003445 | train_eval 0.002118 | val 0.009174 | gap +333.1% | lr 1.34e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9724   0.0199   0.0805
+      throttle   0.8273   0.0273   0.0796
+         steer   0.8958   0.0327   0.0541
+       overall   0.8985
+  ✓ checkpoint saved
+
+Epoch 016
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0045
+  step 204/1026 | loss 0.0039
+  step 306/1026 | loss 0.0032
+  step 408/1026 | loss 0.0033
+  step 510/1026 | loss 0.0034
+  step 612/1026 | loss 0.0034
+  step 714/1026 | loss 0.0035
+  step 816/1026 | loss 0.0035
+  step 918/1026 | loss 0.0034
+  step 1020/1026 | loss 0.0034
+Epoch 016 | train 0.003359 | train_eval 0.002026 | val 0.009540 | gap +370.8% | lr 1.19e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9728   0.0198   0.0800
+      throttle   0.8318   0.0267   0.0786
+         steer   0.8869   0.0332   0.0563
+       overall   0.8971
+
+Epoch 017
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0025
+  step 204/1026 | loss 0.0032
+  step 306/1026 | loss 0.0033
+  step 408/1026 | loss 0.0030
+  step 510/1026 | loss 0.0032
+  step 612/1026 | loss 0.0032
+  step 714/1026 | loss 0.0032
+  step 816/1026 | loss 0.0032
+  step 918/1026 | loss 0.0033
+  step 1020/1026 | loss 0.0034
+Epoch 017 | train 0.003349 | train_eval 0.001935 | val 0.008945 | gap +362.4% | lr 1.04e-05
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9740   0.0200   0.0782
+      throttle   0.8389   0.0266   0.0769
+         steer   0.8959   0.0321   0.0541
+       overall   0.9029
+  ✓ checkpoint saved
+
+Epoch 018
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0039
+  step 204/1026 | loss 0.0033
+  step 306/1026 | loss 0.0033
+  step 408/1026 | loss 0.0033
+  step 510/1026 | loss 0.0032
+  step 612/1026 | loss 0.0032
+  step 714/1026 | loss 0.0032
+  step 816/1026 | loss 0.0032
+  step 918/1026 | loss 0.0032
+  step 1020/1026 | loss 0.0031
+Epoch 018 | train 0.003082 | train_eval 0.001835 | val 0.008930 | gap +386.8% | lr 8.90e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9732   0.0194   0.0793
+      throttle   0.8378   0.0257   0.0772
+         steer   0.9019   0.0310   0.0525
+       overall   0.9043
+  ✓ checkpoint saved
+
+Epoch 019
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0038
+  step 204/1026 | loss 0.0029
+  step 306/1026 | loss 0.0027
+  step 408/1026 | loss 0.0030
+  step 510/1026 | loss 0.0029
+  step 612/1026 | loss 0.0031
+  step 714/1026 | loss 0.0030
+  step 816/1026 | loss 0.0030
+  step 918/1026 | loss 0.0031
+  step 1020/1026 | loss 0.0030
+Epoch 019 | train 0.002998 | train_eval 0.001622 | val 0.008915 | gap +449.8% | lr 7.50e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9733   0.0195   0.0792
+      throttle   0.8432   0.0250   0.0759
+         steer   0.9003   0.0307   0.0529
+       overall   0.9056
+  ✓ checkpoint saved
+
+Epoch 020
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0035
+  step 204/1026 | loss 0.0028
+  step 306/1026 | loss 0.0032
+  step 408/1026 | loss 0.0030
+  step 510/1026 | loss 0.0029
+  step 612/1026 | loss 0.0029
+  step 714/1026 | loss 0.0029
+  step 816/1026 | loss 0.0029
+  step 918/1026 | loss 0.0028
+  step 1020/1026 | loss 0.0027
+Epoch 020 | train 0.002765 | train_eval 0.001580 | val 0.009391 | gap +494.5% | lr 6.18e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9718   0.0193   0.0814
+      throttle   0.8394   0.0249   0.0768
+         steer   0.8937   0.0316   0.0546
+       overall   0.9017
+
+Epoch 021
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0031
+  step 204/1026 | loss 0.0032
+  step 306/1026 | loss 0.0031
+  step 408/1026 | loss 0.0029
+  step 510/1026 | loss 0.0031
+  step 612/1026 | loss 0.0030
+  step 714/1026 | loss 0.0029
+  step 816/1026 | loss 0.0028
+  step 918/1026 | loss 0.0028
+  step 1020/1026 | loss 0.0028
+Epoch 021 | train 0.002786 | train_eval 0.001521 | val 0.009110 | gap +498.9% | lr 4.96e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9734   0.0189   0.0790
+      throttle   0.8337   0.0252   0.0781
+         steer   0.8971   0.0310   0.0537
+       overall   0.9014
+
+Epoch 022
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0025
+  step 204/1026 | loss 0.0025
+  step 306/1026 | loss 0.0026
+  step 408/1026 | loss 0.0027
+  step 510/1026 | loss 0.0027
+  step 612/1026 | loss 0.0027
+  step 714/1026 | loss 0.0027
+  step 816/1026 | loss 0.0027
+  step 918/1026 | loss 0.0028
+  step 1020/1026 | loss 0.0027
+Epoch 022 | train 0.002756 | train_eval 0.001448 | val 0.009034 | gap +523.8% | lr 3.85e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9731   0.0191   0.0794
+      throttle   0.8385   0.0247   0.0770
+         steer   0.8987   0.0311   0.0533
+       overall   0.9034
+
+Epoch 023
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0022
+  step 204/1026 | loss 0.0022
+  step 306/1026 | loss 0.0024
+  step 408/1026 | loss 0.0028
+  step 510/1026 | loss 0.0026
+  step 612/1026 | loss 0.0026
+  step 714/1026 | loss 0.0025
+  step 816/1026 | loss 0.0026
+  step 918/1026 | loss 0.0026
+  step 1020/1026 | loss 0.0026
+Epoch 023 | train 0.002604 | train_eval 0.001474 | val 0.009156 | gap +521.3% | lr 2.86e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9713   0.0193   0.0821
+      throttle   0.8427   0.0239   0.0760
+         steer   0.8999   0.0305   0.0530
+       overall   0.9046
+
+Epoch 024
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0036
+  step 204/1026 | loss 0.0032
+  step 306/1026 | loss 0.0029
+  step 408/1026 | loss 0.0027
+  step 510/1026 | loss 0.0026
+  step 612/1026 | loss 0.0026
+  step 714/1026 | loss 0.0027
+  step 816/1026 | loss 0.0026
+  step 918/1026 | loss 0.0026
+  step 1020/1026 | loss 0.0026
+Epoch 024 | train 0.002595 | train_eval 0.001336 | val 0.009195 | gap +588.2% | lr 2.01e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9728   0.0193   0.0799
+      throttle   0.8360   0.0252   0.0776
+         steer   0.8960   0.0310   0.0540
+       overall   0.9016
+
+Epoch 025
+  train: 1026 batches (accum=4)
+  first batch received, bev=(16, 8, 3, 224, 224)
+  step 102/1026 | loss 0.0024
+  step 204/1026 | loss 0.0025
+  step 306/1026 | loss 0.0023
+  step 408/1026 | loss 0.0022
+  step 510/1026 | loss 0.0023
+  step 612/1026 | loss 0.0023
+  step 714/1026 | loss 0.0023
+  step 816/1026 | loss 0.0023
+  step 918/1026 | loss 0.0024
+  step 1020/1026 | loss 0.0024
+Epoch 025 | train 0.002442 | train_eval 0.001283 | val 0.009279 | gap +623.2% | lr 1.30e-06
+
+  [val] Per-target metrics
+                     R²      MAE     RMSE
+  ----------------------------------------
+         brake   0.9721   0.0196   0.0809
+      throttle   0.8292   0.0256   0.0792
+         steer   0.8972   0.0313   0.0537
+       overall   0.8995
+Early stopping at epoch 25
+
+==================================================
+  Overfitting Analizi
+==================================================
+  En iyi val loss : epoch   19  (0.008915)
+  Son epoch       : epoch   25  (train 0.001283 | val 0.009279)
+  Loss gap (val - train): +0.007996  (+623.2%)
+  Durum: 🔴 Belirgin overfitting — regularization artırılabilir
+  Early stopping: en iyi epoch'tan 6 epoch sonra durdu
+==================================================
+  📊 Grafik kaydedildi → checkpoints\training_curves.png
+Done. Best val loss 0.008915 at epoch 19
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Unexpected keys (bn2.num_batches_tracked, bn2.bias, bn2.running_mean, bn2.running_var, bn2.weight, classifier.bias, classifier.weight, conv_head.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+Loaded epoch 19 | val_loss 0.008915
+
+=== Test ===
+Test pairs: 64
+Loading 64 file pairs with 2 workers...
+  50/64 files loaded
+  64/64 files loaded
+  Total sequences: 3386
+
+                   R²      MAE     RMSE
+----------------------------------------
+       brake   0.9759   0.0172   0.0746
+    throttle   0.8758   0.0216   0.0654
+       steer   0.9144   0.0266   0.0438
+
+     overall   0.9221
+predictions.png kaydedildi

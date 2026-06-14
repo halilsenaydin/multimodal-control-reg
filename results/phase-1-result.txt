@@ -1,0 +1,17 @@
+Train files: 308
+Test files : 64
+
+── Per-Target Evaluation ──
+brake      | R2: 0.9524 | MAE: 0.0295 | RMSE: 0.1046
+throttle   | R2: 0.8248 | MAE: 0.0223 | RMSE: 0.0794
+steer      | R2: 0.8044 | MAE: 0.0470 | RMSE: 0.0664
+
+── Macro Averages ──
+R2   : 0.8605
+MAE  : 0.0329
+RMSE : 0.0835
+
+── Joint Evaluation ──
+Joint R2   : 0.8605
+Joint MAE  : 0.0329
+Joint RMSE : 0.0850
